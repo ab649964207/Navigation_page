@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+kbd {
+    border: 1px solid red;
+    width:60px;
+    height:60px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+#keyboard div:nth-child(2) {
+    margin-left: 15px; 
+}
+#keyboard  div:nth-child(3) {
+    margin-left: 50px;
+}
+#keyboard {
+    margin-top: 100px;
+    text-align: center;
+}
+#keyboard kbd button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+}
+#keyboard kbd:hover button{
+    display: inline-block;
+}
+#keyboard kbd {
+    position: relative;
+}
