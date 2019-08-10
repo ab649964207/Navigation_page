@@ -11,26 +11,80 @@ kbd {
     height:60px;
     display: inline-block;
     text-transform: uppercase;
+    
+}
+body {
+    height: 100vh;
+    
+    
+    background: rgb(0, 3, 26) url(./image/wall.png) no-repeat center center;
+    background-size: cover;
+}
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;    
+}
+.key {
+    color: white;
+    width: 75px;
+    height: 60px;
+    border: 1px solid #373737;
+    background: linear-gradient(to bottom, #292929 0%,#111111 50%);
+    border-radius: 4px; 
+    box-shadow: 0 0 0 1px #1a1b1c, 0 0 0 2px #1f2020, 0 3px 0 2px #080808;
+
+ 
+    margin: 10px 8px;
+
 }
 #keyboard div:nth-child(2) {
-    margin-left: 15px; 
+    margin-left: -125px; 
 }
 #keyboard  div:nth-child(3) {
-    margin-left: 50px;
+    margin-left: -140px;
 }
 #keyboard {
-    margin-top: 100px;
     text-align: center;
+    background: rgba(255,255,255,0.2);
+    padding: 50px 50px;
+    border-radius: 20px;
 }
 #keyboard kbd button {
+     width: 20px;
+    height: 20px;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
-    display: none;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 3px;
+    background: #ffffff;
+    display:none;
 }
 #keyboard kbd:hover button{
     display: inline-block;
 }
 #keyboard kbd {
     position: relative;
+    
+}
+#wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    width: 1500px;
+    height: 500px;
+}
+.key img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.key span {
+    position:absolute;
+    font-size: 24px;
+    font-family: pingfang;
+    top: 2px;
+    left: 5px;
 }
