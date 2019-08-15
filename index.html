@@ -10,9 +10,9 @@
 	<header>
 		<div id	="search">
 			<form name="s" action="http://www.google.com/search">
-				<input type="text" id="q" name="q" autocomplete="on" value>
-				<input type="button" class="button" onclick="window.open('http://www.baidu.com/s?wd='+s.wd.value,'')" value="百度一下">
-				<input type="button" class="button" onclick="window.open('http://www.google.com/search?q='+s.wd.value,'')" value="谷歌搜索">
+				<input type="text" id="searchInput" name="q" autocomplete="on" value>
+				<input type="button" class="button" onclick="window.open('http://www.baidu.com/s?wd='+s.searchInput.value,'')" value="百度一下">
+				<input type="button" class="button" onclick="window.open('http://www.google.com/search?q='+s.searchInput.value,'')" value="谷歌搜索">
 			
 			</form>
 		</div>

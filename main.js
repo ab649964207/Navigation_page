@@ -1,3 +1,4 @@
+
 //生成html标签，添加属性的函数
 function tag(tagName, attributes ) {
 	var element = document.createElement(tagName);
@@ -74,10 +75,30 @@ for (let i = 0; i < keys.length; i++) {
 }
 
 //监听键盘事件
+var searchMode = false;
+document.onkeypress = function (a) {
+	
+	key = a['key'];
+	website = hash[key];
+	if (!searchMode) {
+		window.open('http://' + website, '_blank ')
+		
+	}
+	
+	
+}
+document.onclick = function (event) {
+	if (event.target === searchInput) {
+		searchMode = true;
+		
+	} else {
+		searchMode = false;
+	}
+	
+}
 
-// document.onkeypress = function (a) {
-// 	key = a['key'];
-// 	website = hash[key];
-// 	// location.href = 'http://' + website;
-// 	window.open('http://' + website, '_blank ')
-// }
+
+
+
+
+
