@@ -75,9 +75,9 @@ for (let i = 0; i < keys.length; i++) {
 
 //监听键盘事件
 
-document.onkeypress = function (a) {
-	key = a['key'];
-	website = hash[key];
-	// location.href = 'http://' + website;
-	window.open('http://' + website, '_blank ')
-}
+// document.onkeypress = function (a) {
+// 	key = a['key'];
+// 	website = hash[key];
+// 	// location.href = 'http://' + website;
+// 	window.open('http://' + website, '_blank ')
+// }
