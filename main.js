@@ -19,12 +19,18 @@ var hash = {
 	w: 'weibo.com',
 	e: 'ele.me',
 	r: 'renren.com',
-	t: 'tianya.com',
+	t: 'taobao.com',
 	y: 'youtube.com',
 	u: 'uc.com',
 	i: 'iqiyi.com',
 	o: 'opera.com',
-	p: undefined,
+	h: 'hao123.com',
+	s: 'sohu.com',
+	g: 'google.com',
+	y: 'youku.com',
+	z:'zhihu.com',
+	b:'baidu.com'
+
 }
 
 //从localStorage获取信息
