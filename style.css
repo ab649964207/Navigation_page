@@ -26,6 +26,83 @@ body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset
     padding: 0;
 }
 
+.effects {
+    position: absolute;
+    width: 50.458vw;
+    overflow: visible;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 50.458vw;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.effects div {
+    position: absolute;
+    border: 1px solid #c4c4c456;
+    border-radius: 50%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.0;
+    animation: sparkle 8s infinite;
+}
+
+.effects .circle1 {
+    animation-delay: 0s;
+}
+
+.effects .circle2 {
+    animation-delay: 1s;
+}
+
+.effects .circle3 {
+    animation-delay: 2s;
+}
+
+.effects .circle4 {
+    animation-delay: 3s;
+}
+
+.effects .circle5 {
+    animation-delay: 4s;
+}
+
+.effects .circle6 {
+    animation-delay: 5s;
+}
+
+.effects .circle7 {
+    animation-delay: 6s;
+}
+
+.effects .circle8 {
+    animation-delay: 7s;
+}
+
+@keyframes sparkle {
+    0% {
+        width: 40%;
+        height: 40%;
+        opacity: 0.0
+    }
+    50% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.1;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 0.0
+    }
+}
+
 header {
     position: relative;
 }

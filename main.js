@@ -87,7 +87,15 @@ document.onkeypress = function (a) {
 	key = a['key'];
 	website = hash[key];
 	if (!searchMode) {
-		window.open('http://' + website, '_blank ')
+		if (website === null || website === undefined) {
+			alert('抱歉,该网址似乎是个空地址,编辑一下吧')
+			document.getElementById(`${key}`).click()
+			
+			
+		}else{
+			window.open('http://' + website, '_blank ')
+		}
+		
 		
 	}
 	
