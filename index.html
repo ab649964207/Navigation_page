@@ -4,7 +4,7 @@
 <head>
 	<title>我的导航</title>
 	<link rel="stylesheet" href="style.css">
-
+	<script src="//at.alicdn.com/t/font_1373073_sgyg48bvp2.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,11 @@
 	<header>
 		<div id="search">
 			<form name="s" action="http://www.google.com/search">
-				<input type="text" id="searchInput" name="q" autocomplete="on" value>
+				<input type="text" id="searchInput" name="q" autocomplete="off" value>
+
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-search2"></use>
+				</svg>
 				<input type="button" class="button"
 					onclick="window.open('http://www.baidu.com/s?wd='+s.searchInput.value,'')" value="百度一下">
 				<input type="button" class="button"

@@ -26,6 +26,14 @@ body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset
     padding: 0;
 }
 
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
 .effects {
     position: absolute;
     width: 50.458vw;
@@ -121,10 +129,23 @@ header {
     background-color: #555;
 }
 
+#search  .icon {
+    color: rgb(122, 122, 122);
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+#searchInput:focus+.icon {
+    color: rgb(228, 228, 228);
+}
+
 #searchInput {
     width: 480px;
     height: 38px;
-    padding: 5px 5px 5px 25px;
+    padding: 5px 5px 5px 50px;
     font-size: 24px;
     line-height: 24px;
     background: #777;
