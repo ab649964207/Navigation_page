@@ -48,6 +48,7 @@ for (let i = 0; i < keys.length; i++) {
 		//给button注册属性事件
 
 		var button = tag('button', { id: keys[i][j], textContent: 'E'});
+		
 		button.onclick = function (event) {
 			var button2 = event.target;
 			var tempWebsite = prompt('请输入一个网址');
@@ -56,7 +57,7 @@ for (let i = 0; i < keys.length; i++) {
 			button2.nextSibling.src = 'http://www.' + hash[key] + '/favicon.ico';
 			localStorage.setItem('uuu', JSON.stringify(hash));
 		}
-
+		
 		//添加目标网站的icon
 
 		img = tag('img');
@@ -73,6 +74,14 @@ for (let i = 0; i < keys.length; i++) {
 
 		var kbd = tag('kbd', { className: 'key' });
 		var span = tag('span', { className: 'text', textContent: keys[i][j] });
+		kbd.onclick = function (event) {
+	
+			let key = event.path[0].childNodes[0].textContent;
+			website = hash[key];
+			window.open('http://' + website, '_blank ')
+			
+		}
+		
 		keyboardrow.appendChild(kbd);
 		kbd.appendChild(span);
 		kbd.appendChild(button);
@@ -110,9 +119,6 @@ document.onclick = function (event) {
 	}
 	
 }
-
-
-
 
 
 
